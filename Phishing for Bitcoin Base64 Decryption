@@ -1,2 +1,2 @@
 Email indicates it could be suspicious due to unusual message in body or preview of email.
-When decoding a base64 string in the original message it should become a URL. For this example the Base64 string did not produce a URL. However alternative is to save the file and import into a text editor to see if an further information is extractable.
+When decoding a base64 string in the original message (email) it to URL format. For this example, the Base64 string did not produce a URL from orginal email content. However, an alternative (possible danger to attachment contents executing) is to save the file and import into a text editor to see if an further information is extractable. 
