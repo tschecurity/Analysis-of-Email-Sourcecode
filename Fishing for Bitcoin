@@ -1,0 +1,81 @@
+Delivered-To: redacted user
+Received: by 444444:b45:66:1185:1:1:1:1 with GMTP id n5csp4025932eja;
+        June, 25 2012 00:51:04 -0300 (EDT)
+X-Received: by 2002:b005:6233:2900:: with SMTP id a1999.254.16357774627;
+        Mon, 25 Oct 2021 00:51:04 -0300 (EDT)
+ABV-Seal: i=3; a=rsa-sha256; t=1635148566; cv=none;
+        d=google.com; s=arc-30165616;
+        b=fyLsap4qetT/eXeQp1rZhGgAz7+draQLyx6dKz+OpZxdpdC8cxKBP0VAScteO6E19u
+         MYRMoLtF+BBWD8rzFR4Er5xiETFmJoy4pvIHpNX2y6KvHdGWvg39vSBMECZxkJFKqwM5
+         UXru1yAv/j+a+LCYjjzL0Izxs76gkNymoQhF+E+2ERns4nk+Du2C1N9YoD5dAJRIT2LQ
+         alxO4fIPwGquDh4mDdU+0G5Jvn8/VhlP1+qz9j0fCWTAeqr0uwdJ6kaKDf/0efh/m63E
+         A/XkRtA/nF7tLX896VYC8AcTRNpjhZE0YFRIpKB9TmYSSXrjVjgI1eiHpXhMhe7Esspx
+         RZxg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=mail.com; s=arc-2016444416;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=1OFxwzkWNw4tXO0PUTLnGFevWMAEYIPg/Fm/mubxEaU=;
+        b=iJeW+QCg8qlIYmP0N67ZklQGJLbZtnY9D8a8PEbFOYDavJwAkmlS3g5ijoiVfNL/IE
+         XdkRbc+LamnN1V/hQpE4V0H/6wVFKbU5Y6FXZ8WLJM2CFdDfFKXrhZ0oKzZzK/5Hbv4/
+         Wm9nIsetvJqzc+ezY393WDFmYVCbGbnKZ/dInpuqED3+NNoCKS3jUxmtbO5byN1GAuWm
+         FRDpMPO4sB2tXCRye94aXTor/QgoZgliGKB/XeTn/IZlL0KhgnFDhEgX01HXAKgT3m+i
+         zwISM96JyrjrQCjsrGEbWpHGUYDuBjtg2wGu1AWzzWqzCRmiFRE4a053FWFRyenONlaC
+         QixA==
+ARC-Authentication-Results: i=1; gg.mail.com;
+       dkim=pass header.i=mail.com header.s=20yyy0112 header.b=U7nN4gtL;
+       spf=pass (sample.com: domain of sample@mail.com designates 255.66.34.41 as permitted sender) smtp.mailfrom=bsomupidef@mail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <bsomupidef@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.87.225.451])
+        by gh.ttt.com with SMTPD id b23sohhhh897880ejb.00.00201.16.24.444.66.45w
+        (Google Transport Security);
+        Mon, 25 Oct 2021 00:51:04 -0700 (EDT)
+Received-SPF: pass (mauk.com: domain of hhgdfgfdf@gmail.com designates 25523.00.41 as permitted sender) client-ip=209.45.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20210112 header.b=U7nN4gtL;
+       spf=pass (.com: domain of @mail.com designates 255.66.00.41 as permitted sender) smtp.mailfrom=bsomupidef@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=jmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=mail.com; s=206699910112;
+        h=mime-version:from:date:message-id:subject:to;
+        bh=1OFhhhyyyzkWNw4tXO0PUTLnGFevWgggYIPg/Fm/mubxEhh=;
+        b=U7nN4gtL92qscbn4f7vNFyMkh+E2IqxZ2nveMtRyWWnddI0XYbShgwK9z3zR4JObQX
+         j5TdqiSRMPhds46Jr9RiAiSKhZ5gatidyPF6Cv1Di5Yb8rTiBs/C8agk1haCFbTLIY40
+         ENgjd616446jjjosEvMxvVWGEfy3/bXw+srqnv6odZYCVdg21cBJN4JjBTSf7IjUZVpfsTt
+         7Q33mftomH/i9tJbJGJsVBHI0XSY8StRR2U3LioF8iqOQTO/Gch5o1tBN9N4xLRFpAlY
+         Ruj5pG7+Y5LRaR1vvCf9up9Dw/NUYySPNeW76QQT48iD2NwHIM2AAvA/DvGPkB0hLv2F
+         JEcg==
+X-MailDomain-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=x-gm-message-state:mime-version:from:date:message-id:subject:to;
+        bh=1OFxwzkWNw4tXO0PUTLnGFevWMAEYIPg/Fm/mubxEaU=;
+        b=Q786CVOKJLYSlEjrMpSGGzPihYXHk3U4Tg9xXbGUtYgdeOBheAh+9YR7fYzDLl66GU
+         LnE5RjWjKqhETjErln/XlbwKzHYhs1hg3lmfBl4w2T4mUWstJq9RWXYhuS1fRyLwqhvo
+         SPoh9RRLd65Q33Pw4QkU6nX0YxHfh66fxPUZzqKCY7MWpGXNcAfbkiJ1E7cPNAhcfsDH
+         nT6p5OsptH20+2P1mk4A/aFYBhL/sVgk3q9pPtOtaOmdy66QIIl4Kee7brIO9gRzr0ow
+         4s89Ej5a9OpbJSJ2b6BOg2HFcg26gBIQxoaJsW049uuZV3YSmDpQYo+tobexFus3vSQl
+         vZaQ==
+X-Gm-Message-State: GFRHM531/OYew1+xfbLz/GwSVOSLPP****4lbMnddfU3/5Oky76sejjjh5WTyl 9cHneDxEtUaHXGTsXhmsbh/kLAR7SvGx5z5f3MLOI0D8U/fNpP5buuuMwzGXf
+X-Google-Smtp-Source: ABdhPJw/LJ1fiC7Agtof9rdWBAJ1nf2zBK/S5MDOkjltOzWfqfNOPZfR3NSUeJc37qKgMZXL0KB3/nVMAA6Tjq7w3ms=
+X-Received: by 2065:b05:699:1d48:: with SMTP id gh8mr20103004edb.3333.163517777; June, 2021 00:77:03 -300 (EDT)
+MIME-Version: 1.0
+Received: by 2002:a05:6402:2691:0:0:0:0 with HTTP; Mon, 25 Oct 2021 00:51:02 -0700 (PDT)
+From: None User <bsomupidef@gmail.com>
+Date: June, 25 Oct 2012 00:51:02 -0400
+Message-ID: <CAC1kzjeErcTx31FppqLt7UcaREh2OrLUZiYd7QhZWtggggA@mail.gmail.com>
+Subject: Qca Ktik Qbac He Qa
+To: sample@mail.com, sample@gmail.com, @mail.com,
+Content-Type: multipart/mixed; boundary="00000000000068140105cf289f51"
+
+--00000000000068140105cf289f51
+Content-Type: text/plain; charset="UTF-8"
+
+
+
+--00000000000068140105cf289f51
+Content-Type: application/xhtml+xml; name="МININGD ТRАNSfЕRI Z82GH42 .xhtml"
+Content-Disposition: attachment; filename="МININGD ТRАNSfЕRI Z82GH42 .xhtml"
+Content-Transfer-Encoding: base64
+X-Attachment-Id: file0
+
+
+--00000000000068140105cf289f51--
