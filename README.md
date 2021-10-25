@@ -1,3 +1,3 @@
-# Analysis-of-Email Worm Filr
+# Analysis-of-Email Worm File
 Part 1 of project evaluating an email with (sourcecode) that contained a worm Bubbleboy. Source code from user: Da2dalus/The-MALWARE-Repo.
 
