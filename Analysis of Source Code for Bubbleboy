@@ -1,4 +1,5 @@
 Line 14: The user sees a message about Bubbleboy Town.
 Line 21: VBS script in C upon start drive updates HTA HTML (further research indicates that was where the malicous code is).
-Line 24: Write indicates that script is being written or executed to a path on Line 25. 
+Line 24: Write indicates that script is likely being written or executed to a path on Line 25. 
 Line 25: VBS script in C drive upon start updates HTA HTML (further research indicates that was where the malicous code is and is targeted to users is Spain, Spanish language).
+Further research shows that Bubbleboy was innovative for its time as it required no use action to actually open an attachment, instead worm activates when initial email is opened. Outlook 98 had a preview pane. Few users in the early days of the internet were educated on cyber security awareness.  
